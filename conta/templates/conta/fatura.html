@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Faturamento{% endblock %}
+
+{% block content %}
+
+<div class="offset-1 col-10 list-div">
+    <h2>Relatório de Faturamento</h2>
+    <br>
+    <p>Valor das Contas a Pagar: R$ {{faturar_x}}</p>
+    <p>Valor das Contas Pagas: R$ {{faturar_y}}</p>
+    <br>
+    <p>Valor total do Período: R$ {{faturamento}}</p>
+    
+</div>
+<br>
+<br>
+
+
+{% endblock %}

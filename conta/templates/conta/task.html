@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Tarefas{% endblock %}
+
+{% block content %}
+
+<div class="offset-1 col-16 list-div">
+    <h2>{{task.name}}</h2>
+
+    <table class="minhaTabela">
+        <thead>
+            <tr ><br><br>
+                <th scope="row" rowspan="1" colspan="1">VALOR</th>
+                <th>STATUS</th>
+                <th>DESCRIÇÃO</th>
+                <th id="tr-alinha2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&nbsp {{task.varcont}} &nbsp </td>
+                <td>&nbsp {{task.done}} &nbsp </td>
+                <td id="tr-alinha">&nbsp {{task.description}} &nbsp</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+{% endblock %}
